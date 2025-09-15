@@ -102,3 +102,152 @@
 
 2025-09-15 09:07:31 | WARNING | Producer interrupted by user.
 2025-09-15 09:07:31 | INFO | Producer shutting down.
+2025-09-15 09:20:58 | INFO | Consumer interrupted by user.
+2025-09-15 09:21:22 | INFO | Logging to file: logs/project_log.log
+2025-09-15 09:21:22 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 09:21:22 | INFO | Project root: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder
+2025-09-15 09:21:22 | INFO | Data folder: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data
+2025-09-15 09:21:22 | INFO | Data file: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/buzz.json
+2025-09-15 09:21:22 | INFO | START producer.
+2025-09-15 09:21:22 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:21:22 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'HegFEN9JRCi4V5qcsYuThQ', 'controller_id': 1}
+2025-09-15 09:21:22 | INFO | Kafka topic: buzzline_json
+2025-09-15 09:21:22 | INFO | Message interval: 3 seconds
+2025-09-15 09:21:22 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:21:22 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-15 09:21:22 | INFO | Kafka producer successfully created.
+2025-09-15 09:21:22 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:21:22 | INFO | Topic 'buzzline_json' already exists. Recreating fresh...
+2025-09-15 09:21:22 | INFO | Requested deletion of topic 'buzzline_json'.
+2025-09-15 09:21:22 | INFO | Topic 'buzzline_json' created successfully.
+2025-09-15 09:21:22 | INFO | Kafka topic 'buzzline_json' is ready.
+2025-09-15 09:21:22 | INFO | Starting message production to topic 'buzzline_json'...
+2025-09-15 09:21:22 | INFO | Opening data file in read mode: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/buzz.json
+2025-09-15 09:21:22 | INFO | Reading data from file: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/buzz.json
+2025-09-15 09:21:22 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-15 09:21:25 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-15 09:21:28 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-15 09:21:30 | INFO | Logging to file: logs/project_log.log
+2025-09-15 09:21:30 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 09:21:30 | INFO | START consumer.
+2025-09-15 09:21:30 | INFO | Kafka topic: buzzline_json
+2025-09-15 09:21:30 | INFO | Kafka consumer group id: buzz_group
+2025-09-15 09:21:30 | INFO | Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-09-15 09:21:30 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:21:30 | INFO | Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-09-15 09:21:30 | INFO | Kafka consumer created successfully.
+2025-09-15 09:21:30 | INFO | Polling messages from topic 'buzzline_json'...
+2025-09-15 09:21:31 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-15 09:21:34 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-15 09:21:34 | INFO | Message received from author: Eve
+2025-09-15 09:21:34 | INFO | Updated author counts: {'Eve': 1}
+2025-09-15 09:21:34 | INFO | Chart updated successfully for message: {"message": "Data engineering is my passion.", "author": "Eve"}
+2025-09-15 09:21:34 | INFO | Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-15 09:21:34 | INFO | Message received from author: Alice
+2025-09-15 09:21:34 | INFO | Updated author counts: {'Eve': 1, 'Alice': 1}
+2025-09-15 09:21:34 | INFO | Chart updated successfully for message: {"message": "Distributed systems are fascinating.", "author": "Alice"}
+2025-09-15 09:21:34 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-15 09:21:34 | INFO | Message received from author: Charlie
+2025-09-15 09:21:34 | INFO | Updated author counts: {'Eve': 1, 'Alice': 1, 'Charlie': 1}
+2025-09-15 09:21:34 | INFO | Chart updated successfully for message: {"message": "Have a great day!", "author": "Charlie"}
+2025-09-15 09:21:34 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-15 09:21:34 | INFO | Message received from author: Alice
+2025-09-15 09:21:34 | INFO | Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1}
+2025-09-15 09:21:34 | INFO | Chart updated successfully for message: {"message": "Data engineering is my passion.", "author": "Alice"}
+2025-09-15 09:21:34 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-15 09:21:34 | INFO | Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-15 09:21:34 | INFO | Message received from author: Diana
+2025-09-15 09:21:34 | INFO | Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1, 'Diana': 1}
+2025-09-15 09:21:35 | INFO | Chart updated successfully for message: {"message": "Distributed systems are fascinating.", "author": "Diana"}
+2025-09-15 09:21:37 | INFO | Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-15 09:21:37 | INFO | Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-15 09:21:37 | INFO | Message received from author: Alice
+2025-09-15 09:21:37 | INFO | Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 1}
+2025-09-15 09:21:38 | INFO | Chart updated successfully for message: {"message": "Buzz messages for everyone.", "author": "Alice"}
+2025-09-15 09:21:40 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-15 09:21:40 | INFO | Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-15 09:21:40 | INFO | Message received from author: Diana
+2025-09-15 09:21:40 | INFO | Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-09-15 09:21:40 | INFO | Chart updated successfully for message: {"message": "Hello, Kafka world!", "author": "Diana"}
+2025-09-15 09:21:43 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-15 09:21:43 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-15 09:21:43 | INFO | Message received from author: Eve
+2025-09-15 09:21:43 | INFO | Updated author counts: {'Eve': 2, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-09-15 09:21:44 | INFO | Chart updated successfully for message: {"message": "This is a buzz message.", "author": "Eve"}
+2025-09-15 09:21:46 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-09-15 09:21:46 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-09-15 09:21:46 | INFO | Message received from author: Eve
+2025-09-15 09:21:46 | INFO | Updated author counts: {'Eve': 3, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-09-15 09:21:46 | INFO | Chart updated successfully for message: {"message": "JSON makes life easier.", "author": "Eve"}
+2025-09-15 09:21:49 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-09-15 09:21:49 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-09-15 09:21:49 | INFO | Message received from author: Alice
+2025-09-15 09:21:49 | INFO | Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 2}
+2025-09-15 09:21:49 | INFO | Chart updated successfully for message: {"message": "JSON makes life easier.", "author": "Alice"}
+2025-09-15 09:21:52 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-09-15 09:21:52 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-09-15 09:21:52 | INFO | Message received from author: Diana
+2025-09-15 09:21:52 | INFO | Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 3}
+2025-09-15 09:21:53 | INFO | Chart updated successfully for message: {"message": "Data engineering is my passion.", "author": "Diana"}
+2025-09-15 09:21:54 | WARNING | Producer interrupted by user.
+2025-09-15 09:21:54 | INFO | Kafka producer closed.
+2025-09-15 09:21:54 | INFO | END producer.
+2025-09-15 09:21:57 | WARNING | Consumer interrupted by user.
+2025-09-15 09:21:57 | INFO | Kafka consumer for topic 'buzzline_json' closed.
+2025-09-15 09:21:57 | INFO | END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-09-15 09:22:39 | INFO | Logging to file: logs/project_log.log
+2025-09-15 09:22:39 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 09:22:39 | INFO | Project root: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder
+2025-09-15 09:22:39 | INFO | Data folder: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data
+2025-09-15 09:22:39 | INFO | Data file: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/smoker_temps.csv
+2025-09-15 09:22:39 | INFO | START producer.
+2025-09-15 09:22:39 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:22:39 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'HegFEN9JRCi4V5qcsYuThQ', 'controller_id': 1}
+2025-09-15 09:22:39 | INFO | Kafka topic: smoker_csv
+2025-09-15 09:22:39 | INFO | Message interval: 5 seconds
+2025-09-15 09:22:39 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:22:39 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-15 09:22:39 | INFO | Kafka producer successfully created.
+2025-09-15 09:22:39 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:22:39 | INFO | Topic 'smoker_csv' already exists. Recreating fresh...
+2025-09-15 09:22:39 | INFO | Requested deletion of topic 'smoker_csv'.
+2025-09-15 09:22:39 | INFO | Topic 'smoker_csv' created successfully.
+2025-09-15 09:22:39 | INFO | Kafka topic 'smoker_csv' is ready.
+2025-09-15 09:22:39 | INFO | Starting message production to topic 'smoker_csv'...
+2025-09-15 09:22:39 | INFO | Opening data file in read mode: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/smoker_temps.csv
+2025-09-15 09:22:39 | INFO | Reading data from file: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/smoker_temps.csv
+2025-09-15 09:22:39 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:22:39.743783', 'temperature': 70.4}
+2025-09-15 09:22:44 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:22:44.860458', 'temperature': 70.8}
+2025-09-15 09:22:45 | INFO | Logging to file: logs/project_log.log
+2025-09-15 09:22:45 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 09:22:46 | INFO | START consumer.
+2025-09-15 09:22:46 | INFO | Kafka topic: smoker_csv
+2025-09-15 09:22:46 | INFO | Kafka consumer group id: smoker_group
+2025-09-15 09:22:46 | INFO | Rolling window size: 10
+2025-09-15 09:22:46 | INFO | Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-09-15 09:22:46 | INFO | Rolling window size: 10
+2025-09-15 09:22:46 | INFO | Kafka broker address: localhost:9092
+2025-09-15 09:22:46 | INFO | Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-09-15 09:22:46 | INFO | Kafka consumer created successfully.
+2025-09-15 09:22:46 | INFO | Polling messages from topic 'smoker_csv'...
+2025-09-15 09:22:49 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:22:39.743783', 'temperature': 70.4}
+2025-09-15 09:22:49 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:22:49.861990', 'temperature': 71.2}
+2025-09-15 09:22:50 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:22:44.860458', 'temperature': 70.8}
+2025-09-15 09:22:50 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:22:49.861990', 'temperature': 71.2}
+2025-09-15 09:22:54 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:22:54.862967', 'temperature': 71.6}
+2025-09-15 09:22:54 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:22:54.862967', 'temperature': 71.6}
+2025-09-15 09:22:59 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:22:59.864829', 'temperature': 72.0}
+2025-09-15 09:22:59 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:22:59.864829', 'temperature': 72.0}
+2025-09-15 09:23:04 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:23:04.866691', 'temperature': 72.4}
+2025-09-15 09:23:04 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:23:04.866691', 'temperature': 72.4}
+2025-09-15 09:23:09 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:23:09.868245', 'temperature': 72.8}
+2025-09-15 09:23:09 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:23:09.868245', 'temperature': 72.8}
+2025-09-15 09:23:14 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:23:14.870019', 'temperature': 73.2}
+2025-09-15 09:23:14 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:23:14.870019', 'temperature': 73.2}
+2025-09-15 09:23:19 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:23:19.871941', 'temperature': 73.6}
+2025-09-15 09:23:19 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:23:19.871941', 'temperature': 73.6}
+2025-09-15 09:23:24 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-15T14:23:24.873330', 'temperature': 74.0}
+2025-09-15 09:23:24 | INFO | Processed JSON message: {'timestamp': '2025-09-15T14:23:24.873330', 'temperature': 74.0}
+2025-09-15 09:23:25 | WARNING | Producer interrupted by user.
+2025-09-15 09:23:25 | INFO | Kafka producer closed.
+2025-09-15 09:23:25 | INFO | END producer.
