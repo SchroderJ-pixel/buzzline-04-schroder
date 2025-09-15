@@ -251,3 +251,196 @@
 2025-09-15 09:23:25 | WARNING | Producer interrupted by user.
 2025-09-15 09:23:25 | INFO | Kafka producer closed.
 2025-09-15 09:23:25 | INFO | END producer.
+2025-09-15 10:32:27 | WARNING | Consumer interrupted by user.
+2025-09-15 10:32:27 | INFO | Kafka consumer for topic 'smoker_csv' closed.
+2025-09-15 10:32:41 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:32:41 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:32:41 | INFO | START producer...
+2025-09-15 10:32:41 | INFO | Kafka producer connected to localhost:9092
+2025-09-15 10:32:41 | INFO | {'message': 'I just loved a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-15 10:32:41', 'category': 'entertainment', 'sentiment': 0.44, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-15 10:32:41 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-15 10:32:41', 'category': 'entertainment', 'sentiment': 0.44, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-15 10:32:46 | INFO | {'message': 'I just saw a meme! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-15 10:32:46', 'category': 'humor', 'sentiment': 0.15, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-15 10:32:46 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw a meme! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-15 10:32:46', 'category': 'humor', 'sentiment': 0.15, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-15 10:32:51 | INFO | {'message': 'I just found a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:32:51', 'category': 'other', 'sentiment': 0.03, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-09-15 10:32:51 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:32:51', 'category': 'other', 'sentiment': 0.03, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-09-15 10:32:56 | INFO | {'message': 'I just found travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-15 10:32:56', 'category': 'travel', 'sentiment': 0.26, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-15 10:32:56 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-15 10:32:56', 'category': 'travel', 'sentiment': 0.26, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-15 10:33:01 | INFO | {'message': 'I just shared JavaScript! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-15 10:33:01', 'category': 'tech', 'sentiment': 0.7, 'keyword_mentioned': 'JavaScript', 'message_length': 39}
+2025-09-15 10:33:01 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared JavaScript! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-15 10:33:01', 'category': 'tech', 'sentiment': 0.7, 'keyword_mentioned': 'JavaScript', 'message_length': 39}
+2025-09-15 10:33:02 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:33:02 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:33:02 | INFO | Grouping by field: category
+2025-09-15 10:33:02 | INFO | START consumer (pie by category).
+2025-09-15 10:33:02 | INFO | Kafka topic: buzzline_json
+2025-09-15 10:33:02 | INFO | Kafka consumer group id: buzz_group
+2025-09-15 10:33:02 | INFO | Consumer connecting to topic 'buzzline_json' in group 'buzz_group'...
+2025-09-15 10:33:02 | INFO | Kafka broker address: localhost:9092
+2025-09-15 10:33:02 | INFO | Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-09-15 10:33:02 | INFO | Kafka consumer created successfully.
+2025-09-15 10:33:02 | INFO | Polling messages from topic 'buzzline_json'...
+2025-09-15 10:33:06 | INFO | {'message': 'I just tried a meme! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-15 10:33:06', 'category': 'humor', 'sentiment': 0.07, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-09-15 10:33:06 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried a meme! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-15 10:33:06', 'category': 'humor', 'sentiment': 0.07, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-09-15 10:33:11 | INFO | {'message': 'I just saw Python! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:33:11', 'category': 'tech', 'sentiment': 0.67, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-15 10:33:11 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw Python! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:33:11', 'category': 'tech', 'sentiment': 0.67, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-15 10:33:16 | INFO | {'message': 'I just saw a trick! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:33:16', 'category': 'other', 'sentiment': 0.21, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-09-15 10:33:16 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw a trick! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:33:16', 'category': 'other', 'sentiment': 0.21, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-09-15 10:33:21 | INFO | {'message': 'I just shared a trick! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-15 10:33:21', 'category': 'other', 'sentiment': 0.45, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-09-15 10:33:21 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a trick! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-15 10:33:21', 'category': 'other', 'sentiment': 0.45, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-09-15 10:33:23 | WARNING | Producer interrupted by user.
+2025-09-15 10:33:23 | INFO | Kafka producer closed.
+2025-09-15 10:33:23 | INFO | Producer shutting down.
+2025-09-15 10:33:26 | WARNING | Consumer interrupted by user.
+2025-09-15 10:33:26 | INFO | Kafka consumer for topic 'buzzline_json' closed.
+2025-09-15 10:33:26 | INFO | END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-09-15 10:35:51 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:35:51 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:35:51 | INFO | Project root: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder
+2025-09-15 10:35:51 | INFO | Data folder: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data
+2025-09-15 10:35:51 | INFO | Data file: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/buzz.json
+2025-09-15 10:35:51 | INFO | START producer.
+2025-09-15 10:35:51 | INFO | Kafka broker address: localhost:9092
+2025-09-15 10:35:51 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'HegFEN9JRCi4V5qcsYuThQ', 'controller_id': 1}
+2025-09-15 10:35:51 | INFO | Kafka topic: buzzline_json
+2025-09-15 10:35:51 | INFO | Message interval: 3 seconds
+2025-09-15 10:35:51 | INFO | Kafka broker address: localhost:9092
+2025-09-15 10:35:51 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-15 10:35:51 | INFO | Kafka producer successfully created.
+2025-09-15 10:35:51 | INFO | Kafka broker address: localhost:9092
+2025-09-15 10:35:51 | INFO | Topic 'buzzline_json' already exists. Recreating fresh...
+2025-09-15 10:35:51 | INFO | Requested deletion of topic 'buzzline_json'.
+2025-09-15 10:35:51 | INFO | Topic 'buzzline_json' created successfully.
+2025-09-15 10:35:51 | INFO | Kafka topic 'buzzline_json' is ready.
+2025-09-15 10:35:51 | INFO | Starting message production to topic 'buzzline_json'...
+2025-09-15 10:35:51 | INFO | Opening data file in read mode: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/buzz.json
+2025-09-15 10:35:51 | INFO | Reading data from file: ~/OneDrive/Desktop/Masters/Streaming Data/Mod 4/buzzline-04-schroder/data/buzz.json
+2025-09-15 10:35:51 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-15 10:35:54 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-15 10:35:57 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-15 10:35:59 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:35:59 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:35:59 | INFO | Grouping by field: category
+2025-09-15 10:35:59 | INFO | START consumer (pie by category).
+2025-09-15 10:35:59 | INFO | Kafka topic: buzzline_json
+2025-09-15 10:35:59 | INFO | Kafka consumer group id: buzz_group
+2025-09-15 10:35:59 | INFO | Consumer connecting to topic 'buzzline_json' in group 'buzz_group'...
+2025-09-15 10:35:59 | INFO | Kafka broker address: localhost:9092
+2025-09-15 10:35:59 | INFO | Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-09-15 10:35:59 | INFO | Kafka consumer created successfully.
+2025-09-15 10:35:59 | INFO | Polling messages from topic 'buzzline_json'...
+2025-09-15 10:36:00 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-15 10:36:02 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-15 10:36:02 | INFO | Updated category counts: {'unknown': 1}
+2025-09-15 10:36:02 | INFO | Chart updated successfully.
+2025-09-15 10:36:02 | INFO | Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-15 10:36:02 | INFO | Updated category counts: {'unknown': 2}
+2025-09-15 10:36:02 | INFO | Chart updated successfully.
+2025-09-15 10:36:02 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-15 10:36:02 | INFO | Updated category counts: {'unknown': 3}
+2025-09-15 10:36:02 | INFO | Chart updated successfully.
+2025-09-15 10:36:02 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-15 10:36:02 | INFO | Updated category counts: {'unknown': 4}
+2025-09-15 10:36:03 | INFO | Chart updated successfully.
+2025-09-15 10:36:03 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-15 10:36:03 | INFO | Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-15 10:36:03 | INFO | Updated category counts: {'unknown': 5}
+2025-09-15 10:36:03 | INFO | Chart updated successfully.
+2025-09-15 10:36:06 | INFO | Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-15 10:36:06 | INFO | Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-15 10:36:06 | INFO | Updated category counts: {'unknown': 6}
+2025-09-15 10:36:06 | INFO | Chart updated successfully.
+2025-09-15 10:36:09 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-15 10:36:09 | INFO | Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-15 10:36:09 | INFO | Updated category counts: {'unknown': 7}
+2025-09-15 10:36:09 | INFO | Chart updated successfully.
+2025-09-15 10:36:12 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-15 10:36:12 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-15 10:36:12 | INFO | Updated category counts: {'unknown': 8}
+2025-09-15 10:36:12 | INFO | Chart updated successfully.
+2025-09-15 10:36:15 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-09-15 10:36:15 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-09-15 10:36:15 | INFO | Updated category counts: {'unknown': 9}
+2025-09-15 10:36:15 | INFO | Chart updated successfully.
+2025-09-15 10:36:16 | WARNING | Producer interrupted by user.
+2025-09-15 10:36:16 | INFO | Kafka producer closed.
+2025-09-15 10:36:16 | INFO | END producer.
+2025-09-15 10:50:08 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:50:08 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:50:08 | INFO | START producer...
+2025-09-15 10:50:08 | INFO | Kafka producer connected to localhost:9092
+2025-09-15 10:50:08 | INFO | {'message': 'I just tried a meme! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:08', 'category': 'humor', 'sentiment': 0.2, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-15 10:50:08 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried a meme! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:08', 'category': 'humor', 'sentiment': 0.2, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-15 10:50:13 | INFO | {'message': 'I just loved a trick! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:13', 'category': 'other', 'sentiment': 0.45, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-15 10:50:13 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a trick! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:13', 'category': 'other', 'sentiment': 0.45, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-15 10:50:18 | INFO | {'message': 'I just shared a meme! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:18', 'category': 'humor', 'sentiment': 0.5, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-09-15 10:50:18 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a meme! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:18', 'category': 'humor', 'sentiment': 0.5, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-09-15 10:50:23 | INFO | {'message': 'I just loved a movie! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-15 10:50:23', 'category': 'entertainment', 'sentiment': 0.84, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-15 10:50:23 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-15 10:50:23', 'category': 'entertainment', 'sentiment': 0.84, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-15 10:50:25 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:50:25 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:50:25 | INFO | Grouping by field: category
+2025-09-15 10:50:25 | INFO | START consumer (pie by category).
+2025-09-15 10:50:25 | INFO | Kafka topic: buzzline_json
+2025-09-15 10:50:25 | INFO | Kafka consumer group id: buzz_group
+2025-09-15 10:50:25 | INFO | Consumer connecting to topic 'buzzline_json' in group 'buzz_group'...
+2025-09-15 10:50:25 | INFO | Kafka broker address: localhost:9092
+2025-09-15 10:50:25 | INFO | Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-09-15 10:50:25 | INFO | Kafka consumer created successfully.
+2025-09-15 10:50:25 | INFO | Polling messages from topic 'buzzline_json'...
+2025-09-15 10:50:28 | INFO | {'message': 'I just loved a meme! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-15 10:50:28', 'category': 'humor', 'sentiment': 0.25, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-09-15 10:50:28 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a meme! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-15 10:50:28', 'category': 'humor', 'sentiment': 0.25, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-09-15 10:50:33 | INFO | {'message': 'I just loved travel! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-15 10:50:33', 'category': 'travel', 'sentiment': 0.37, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-15 10:50:33 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-15 10:50:33', 'category': 'travel', 'sentiment': 0.37, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-15 10:50:38 | INFO | {'message': 'I just shared recipe! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:38', 'category': 'food', 'sentiment': 0.82, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-15 10:50:38 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared recipe! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:50:38', 'category': 'food', 'sentiment': 0.82, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-15 10:50:43 | WARNING | Producer interrupted by user.
+2025-09-15 10:50:43 | INFO | Kafka producer closed.
+2025-09-15 10:50:43 | INFO | Producer shutting down.
+2025-09-15 10:50:46 | WARNING | Consumer interrupted by user.
+2025-09-15 10:50:46 | INFO | Kafka consumer for topic 'buzzline_json' closed.
+2025-09-15 10:50:46 | INFO | END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-09-15 10:59:17 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:59:17 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:59:17 | INFO | START producer...
+2025-09-15 10:59:17 | INFO | Kafka producer connected to localhost:9092
+2025-09-15 10:59:17 | INFO | {'message': 'I just shared an app! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:59:17', 'category': 'other', 'sentiment': 0.22, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-15 10:59:17 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared an app! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-15 10:59:17', 'category': 'other', 'sentiment': 0.22, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-15 10:59:22 | INFO | {'message': 'I just tried JavaScript! It was funny.', 'author': 'Eve', 'timestamp': '2025-09-15 10:59:22', 'category': 'tech', 'sentiment': 0.89, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-09-15 10:59:22 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried JavaScript! It was funny.', 'author': 'Eve', 'timestamp': '2025-09-15 10:59:22', 'category': 'tech', 'sentiment': 0.89, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-09-15 10:59:26 | INFO | Logging to file: logs/project_log.log
+2025-09-15 10:59:26 | INFO | Log sanitization enabled, personal info removed
+2025-09-15 10:59:26 | INFO | Grouping by field: category
+2025-09-15 10:59:26 | INFO | START consumer (pie by category).
+2025-09-15 10:59:26 | INFO | Kafka topic: project_json
+2025-09-15 10:59:26 | INFO | Kafka consumer group id: buzz_group
+2025-09-15 10:59:26 | INFO | Consumer connecting to topic 'project_json' in group 'buzz_group'...
+2025-09-15 10:59:26 | INFO | Kafka broker address: localhost:9092
+2025-09-15 10:59:26 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-09-15 10:59:26 | INFO | Kafka consumer created successfully.
+2025-09-15 10:59:26 | INFO | Polling messages from topic 'project_json'...
+2025-09-15 10:59:27 | INFO | {'message': 'I just shared travel! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-15 10:59:27', 'category': 'travel', 'sentiment': 0.45, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-15 10:59:27 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared travel! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-15 10:59:27', 'category': 'travel', 'sentiment': 0.45, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 1}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 1, 'other': 1}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 1, 'other': 1, 'travel': 1}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 1, 'other': 1, 'travel': 1, 'tech': 1}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 2, 'other': 1, 'travel': 1, 'tech': 1}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 2, 'other': 1, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 2, 'other': 2, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 2, 'other': 3, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 3, 'other': 3, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 3, 'other': 4, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 1, 'humor': 4, 'other': 4, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 2, 'humor': 4, 'other': 4, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 2, 'humor': 5, 'other': 4, 'travel': 1, 'tech': 2}
+2025-09-15 10:59:30 | INFO | Updated category counts: {'entertainment': 2, 'humor': 5, 'other': 4, 'travel': 2, 'tech': 2}
+2025-09-15 10:59:31 | INFO | Updated category counts: {'entertainment': 2, 'humor': 5, 'other': 4, 'travel': 2, 'tech': 2, 'food': 1}
+2025-09-15 10:59:31 | INFO | Updated category counts: {'entertainment': 2, 'humor': 5, 'other': 5, 'travel': 2, 'tech': 2, 'food': 1}
+2025-09-15 10:59:31 | INFO | Updated category counts: {'entertainment': 2, 'humor': 5, 'other': 5, 'travel': 2, 'tech': 3, 'food': 1}
+2025-09-15 10:59:31 | INFO | Updated category counts: {'entertainment': 2, 'humor': 5, 'other': 5, 'travel': 3, 'tech': 3, 'food': 1}
+2025-09-15 10:59:32 | INFO | {'message': 'I just tried Python! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-15 10:59:32', 'category': 'tech', 'sentiment': 0.09, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-15 10:59:32 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried Python! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-15 10:59:32', 'category': 'tech', 'sentiment': 0.09, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-15 10:59:32 | INFO | Updated category counts: {'entertainment': 2, 'humor': 5, 'other': 5, 'travel': 3, 'tech': 4, 'food': 1}
+2025-09-15 10:59:37 | WARNING | Producer interrupted by user.
+2025-09-15 10:59:37 | INFO | Kafka producer closed.
+2025-09-15 10:59:37 | INFO | Producer shutting down.
