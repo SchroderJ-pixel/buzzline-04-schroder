@@ -1,5 +1,10 @@
 # buzzline-04-case
 
+**Course:** Streaming Data – Module 4  
+**Date:** September 15, 2025  
+**Author:** Justin Schroder  
+**GitHub:** [SchroderJ-pixel](https://github.com/SchroderJ-pixel) 
+
 We can analyze and visualize different types of streaming data as the information arrives.
 
 The producers don't change from buzzline-03-case - they write the same information to a Kafka topic, except the csv producer for the smart smoker has been modified to not run continuously. It will stop after reading all the rows in the CSV file.
@@ -231,13 +236,54 @@ When done, remember to kill the associated terminals for the producer and consum
 
 ## Possible Explorations
 
-- JSON: Process messages in batches of 5 messages.
-- JSON:Limit the display to the top 3 authors.
-- Modify chart appearance.
-- Stream a different set of data and visualize the custom stream with an appropriate chart.
-- How do we find out what types of charts are available?
-- How do we find out what attributes and colors are available?
+## Task 6. Start a Custom Kafka JSON Streaming Application with Pie Chart
 
+For this task we run the required producer `project_producer_case.py` and our new consumer `json_consumer_schroder.py`. The producer streams JSON messages to a Kafka topic. The consumer reads the messages, processes the JSON, and updates a live pie chart that shows the share of messages by category (or by keyword_mentioned if specified in the `.env` file).
+
+### Steps
+
+1. Open two terminals.
+2. In each terminal, activate your virtual environment.
+3. In the first terminal, run the producer.
+4. In the second terminal, run the consumer.
+5. Watch the live pie chart update as messages stream in.
+
+### Commands
+
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m producers.project_producer_case.py
+```
+
+Mac/Linux:
+
+```zsh
+source .venv/bin/activate
+python3 -m producers.project_producer_case.py
+```
+
+### Consumer Terminal
+
+Start the associated consumer that will process and visualize the messages.
+
+In VS Code, open a NEW terminal in your root project folder.
+Use the commands below to activate .venv, and start the consumer.
+
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m consumers.json_consumer_schroder.py
+```
+
+Mac/Linux:
+
+```zsh
+source .venv/bin/activate
+python3 -m consumers.json_consumer_schroder.py
+```
 ---
 
 ## How To Stop a Continuous Process
@@ -290,3 +336,7 @@ Live Bar Chart (Kafka JSON streaming)
 Live Line Chart with Alert (Kafka CSV streaming)
 
 ![CSV (Kafka)](images/live_line_chart_example.jpg)
+
+Live Pie Chart with Alert (Kafka CSV streaming)
+
+![CSV (Kafka)](images/P4.2.png)
